@@ -1,3 +1,4 @@
+
 public abstract class Action {
     public Action(Location startLocation, Location endLocation, int numBeats) {
         this.startLocation = startLocation;
@@ -7,5 +8,4 @@ public abstract class Action {
     Location startLocation;
     Location endLocation;
     int numBeats;
-
 }

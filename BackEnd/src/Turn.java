@@ -1,10 +1,10 @@
 public class Turn extends Action {
-    public enum HowTurn {LEFT_TURN, RIGHT_TURN, LEFT_ABOUT, RIGHT_ABOUT, LEFT_FLANK, RIGHT_FLANK}
+    public enum TurnType {LEFT_TURN, RIGHT_TURN, LEFT_ABOUT, RIGHT_ABOUT, LEFT_FLANK, RIGHT_FLANK}
 
-    HowTurn howTurn;
+    TurnType turnType;
 
-    public Turn(Location startLocation, Location endLocation, int numBeats, HowTurn howTurn) {
+    public Turn(Location startLocation, Location endLocation, int numBeats, TurnType turnType) {
         super(startLocation, endLocation, numBeats);
-        this.howTurn = howTurn;
+        this.turnType = turnType;
     }
 }
